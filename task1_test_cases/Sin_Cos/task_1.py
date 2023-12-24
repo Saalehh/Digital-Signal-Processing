@@ -2,7 +2,7 @@ import math
 import matplotlib.pyplot as plt
 from tkinter import *
 from functools import partial
-from task1_comparesignals import SignalSamplesAreEqual
+from task1_test_cases.comparesignals import SignalSamplesAreEqual
 
 # region Point 1
 

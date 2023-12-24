@@ -13,5 +13,15 @@ def read_samples(path):
         x.append(float(line[0]))
         y.append(float(line[1]))
     file.close()
-    return x, y
+
+    signal = Signal(type=signal_type, is_periodic=is_periodic, x=x, y=y)
+    return signal
+
+
+class Signal:
+    def __init__(self, type, is_periodic, x, y):
+        self.type = type
+        self.is_periodic = is_periodic
+        self.x = x
+        self.y = y
 
